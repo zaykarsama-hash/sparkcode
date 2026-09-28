@@ -4,16 +4,20 @@
   padding: 0;
 }
 body{
-  text-align: center;
-  padding: 40px;
+  /* text-align: center; */
+  padding: 20px;
   height: 100vh;
   background: linear-gradient(135deg,rgb(21, 21, 87),rgba(24, 9, 69, 0.947),rgb(6, 16, 136));
+}
+header{
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .profile-container {
   padding: 5px;
+  margin-top: 10px;
   border-radius: 50%;
   background: linear-gradient(225deg,rgb(29, 43, 204),rgb(2, 5, 35),rgb(64, 11, 88),rgb(0, 21, 255) ); 
   display: flex;
@@ -28,7 +32,7 @@ body{
 h1{
   font-family:"Pirata One", system-ui;
   font-weight: 500;
-  padding: 10px;
+  padding: 5px;
   font-size: 60px;
   color: blueviolet;
 }
@@ -77,3 +81,44 @@ h1{
 .s4h:hover{
   background-color: rgb(40, 124, 123);
 }
+main{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.about{
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid rgb(49, 159, 255);
+}
+.list{
+  list-style: none;
+}
+.list li{
+  position: relative;
+  padding-left: 1rem;
+}
+.list li::before{
+  content: '#';
+  left: 0;
+  font-weight: 900;
+  font-size: 1.2rem;
+  position: absolute;
+}
+dd{
+  margin: 3px;
+  margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
