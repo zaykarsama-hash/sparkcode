@@ -83,21 +83,28 @@ h1{
 main{
   display: flex;
   justify-content:space-evenly;
-  align-items: center;
+  /* align-items: center; */
 }
-table{
-  border:3px solid aquamarine;
-  background: linear-gradient(45deg,rgb(39, 39, 110),rgb(23, 83, 136));
+.skills{
+  margin-top: 20px;
+  height: 100%;
 }
-table *{
-  padding: 8px;
+.Table,.accounts{
+  margin-bottom: 10px;
+  border:3px solid #7aa2ff;
+  /* background-color:#4e72c6; */
+}
 
+.Table *{
+  padding: 8px;
+  
 }
 th{
   font-size: 20px;
-
+  color: #a2a9be;
+  background-color:rgba(255, 255, 255, 0.10);
 }
-.th1{
+/* .th1{
   background: linear-gradient(45deg,rgb(110, 117, 16),blue);
   color: #aeff00;
 }
@@ -108,14 +115,18 @@ th{
 .th3{
   background: linear-gradient(45deg,rgb(109, 179, 4),blue);
   color: #1beece;
-}
+} */
 td{
-  color: rgb(36, 249, 61);
+  color: #e9eefc;
+  /* border: 2px solid #7aa2ff; */
+  background:rgba(255, 255, 255, 0.04);
 }
 .about{
   padding: 10px;
   margin-top: 20px;
-  border: 2px solid rgb(49, 159, 255);
+  border: 2px solid #7aa2ff;
+  color: rgba(255, 255, 255, 0.964);
+  background-color: rgba(255, 255, 255, 0.07);
 }
 .list{
   list-style: none;
