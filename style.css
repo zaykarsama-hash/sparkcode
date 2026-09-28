@@ -28,6 +28,7 @@ body{
 h1{
   font-family:"Pirata One", system-ui;
   font-weight: 500;
+  padding: 10px;
   font-size: 60px;
   color: blueviolet;
 }
@@ -40,7 +41,10 @@ h1{
   border: 2px solid rgb(175, 3, 255);
 }
 .b{
-  padding: 0px 2px;
+  padding: 2px;
+  font: 1em sans-serif;
+  font-weight: 700;
+  font-size: 30px;
 }
 .s1,.s2,.s3,.s4{
   color: #fff;
@@ -57,8 +61,19 @@ h1{
   background-color: rgb(40, 124, 123);
 }
 .s1h:hover,.s2h:hover,.s3h:hover,.s4h:hover{
-  background: linear-gradient(135deg,red,green,blue);
   padding: 2px;
   border-radius: 2px;
   color: #fff;
+}
+.s1h:hover{
+  background: linear-gradient(135deg,red,green,blue);
+}
+.s2h:hover{
+  background-color: rgb(131, 81, 0);
+}
+.s3h:hover{
+  background-color: rgb(55, 104, 6);
+}
+.s4h:hover{
+  background-color: rgb(40, 124, 123);
 }
