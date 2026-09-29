@@ -5,8 +5,11 @@
 }
 body{
   padding: 20px;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(135deg,rgb(21, 21, 87),rgba(24, 9, 69, 0.947),rgb(6, 16, 136));
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-attachment: fixed;
 }
 header{
   padding-bottom: 10px;
@@ -63,6 +66,9 @@ h1{
 }.s4{
   background-color: rgb(40, 124, 123);
 }
+.s1h,.s2h,.s3h,.s4h{
+  transition: all 0.3s ease;
+}
 .s1h:hover,.s2h:hover,.s3h:hover,.s4h:hover{
   padding: 2px;
   border-radius: 2px;
@@ -83,15 +89,21 @@ h1{
 main{
   display: flex;
   justify-content:space-evenly;
-  /* align-items: center; */
+  /*align-items: flex-start;*/
+  flex-wrap: wrap;
 }
 .skills{
   margin-top: 20px;
-  height: 100%;
+  padding: 6px;
+  border:2px solid #7aa2ff;
+}
+.skills h2{
+  color: rgba(255, 255, 255, 0.964);
+  padding: 3px;
+  margin-left: 5px;
 }
 .Table,.accounts{
   margin-bottom: 10px;
-  border:3px solid #7aa2ff;
   /* background-color:#4e72c6; */
 }
 
@@ -116,7 +128,7 @@ th{
   background: linear-gradient(45deg,rgb(109, 179, 4),blue);
   color: #1beece;
 } */
-td{
+.Tbody1 tr td{
   color: #e9eefc;
   /* border: 2px solid #7aa2ff; */
   background:rgba(255, 255, 255, 0.04);
@@ -127,6 +139,12 @@ td{
   border: 2px solid #7aa2ff;
   color: rgba(255, 255, 255, 0.964);
   background-color: rgba(255, 255, 255, 0.07);
+}
+.accounts {
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid #7aa2ff;
+  color: rgba(255, 255, 255, 0.964);
 }
 .list{
   list-style: none;
@@ -146,9 +164,63 @@ dd{
   margin: 3px;
   margin-left: 30px;
 }
-
-
-
+.accounts table{
+  padding: 3px;
+}
+.Tbody2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.Tbody2 tr td a{
+  text-decoration: none;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.964);
+}
+.Tbody2 tr {
+  padding: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /*align-items: center;*/
+}
+.Tbody2 tr td{
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:900px){
+  p {
+    line-height: 1.6;
+  }
+  main{
+    flex-direction: column;
+  }
+  .Table{
+    width: 100%;
+  }
+  .Table *{
+    padding: 2px;
+  }
+  th{
+    font-size: 16px;
+  }
+  .Tbody2 tr td a{
+    font-size: 12px;
+  }
+  .skills{
+    border-radius: 8px 8px 0px 0px;
+  }
+  .accounts{
+    border-radius: 0px 0px 0px 0px;
+  }
+  .about{
+    border-radius: 0px 0px 8px 8px;
+  }
+  
+}
 
 
 
