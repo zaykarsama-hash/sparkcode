@@ -10,6 +10,9 @@ body{
   overflow-x: hidden;
   overflow-y: auto;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header{
   padding-bottom: 10px;
@@ -88,13 +91,19 @@ h1{
 }
 main{
   display: flex;
-  justify-content:space-evenly;
+  /* justify-content:space-evenly; */
   /*align-items: flex-start;*/
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+}
+.sec1{
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
 }
 .skills{
   margin-top: 20px;
   padding: 6px;
+  border-radius: 8px 0px 0px 0px;
   border:2px solid #7aa2ff;
 }
 .skills h2{
@@ -102,7 +111,7 @@ main{
   padding: 3px;
   margin-left: 5px;
 }
-.Table,.accounts{
+.Table{
   margin-bottom: 10px;
   /* background-color:#4e72c6; */
 }
@@ -135,7 +144,9 @@ th{
 }
 .about{
   padding: 10px;
+  border-radius: 0px 8px 8px 0px;
   margin-top: 20px;
+  margin-left: 20px;
   border: 2px solid #7aa2ff;
   color: rgba(255, 255, 255, 0.964);
   background-color: rgba(255, 255, 255, 0.07);
@@ -143,6 +154,7 @@ th{
 .accounts {
   padding: 10px;
   margin-top: 20px;
+  border-radius: 0px 0px 0px 8px;
   border: 2px solid #7aa2ff;
   color: rgba(255, 255, 255, 0.964);
 }
@@ -192,6 +204,12 @@ dd{
   align-items: center;
 }
 @media (max-width:900px){
+  body{
+    padding: 10px;
+  }
+  header{
+    max-width: 636px;
+  }
   p {
     line-height: 1.6;
   }
@@ -218,6 +236,7 @@ dd{
   }
   .about{
     border-radius: 0px 0px 8px 8px;
+    margin-left: 0px;
   }
   
 }
